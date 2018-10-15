@@ -13,6 +13,12 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  #   
+  
+  Myrottenpotatoes::Application.routes.draw do
+    resources :movies
+    root :to => redirect('/movies')
+  end
 
   # Example resource route with options:
   #   resources :products do
